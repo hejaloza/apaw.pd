@@ -1,4 +1,4 @@
-package es.upm.miw.pd.state.connection;
+package es.upm.miw.pd.state.conection;
 
 import es.upm.miw.pd.state.connection.Link;
 
