@@ -5,30 +5,36 @@ import java.util.List;
 
 public class FiguresManager {
 
-	private List<Figure> figures;
+    private List<Figure> figures;
 
-	public FiguresManager() {
-		figures = new ArrayList<>();
-	}
+    private Visitor areaVisitor;
 
-	public void add(Figure figure) {
-		figures.add(figure);
-	}
+    private Visitor numberOfSidesVisitor;
 
-	public double totalArea() {
-		double result = 0;
-		for (Figure figure : figures) {
-			result += figure.area();
-		}
-		return result;
-	}
+    public FiguresManager() {
+        figures = new ArrayList<>();
+        areaVisitor = new AreaVisitor();
+        numberOfSidesVisitor = new NumberOfSidesVisitor();
+    }
 
-	public double totalNumberOfSides() {
-		double result = 0;
-		for (Figure figure : figures) {
-			result += figure.numberOfSides();
-		}
-		return result;
-	}
+    public void add(Figure figure) {
+        figures.add(figure);
+    }
+
+    public double totalArea() {
+        double result = 0;
+        for (Figure figure : figures) {
+            result += figure.area(areaVisitor);
+        }
+        return result;
+    }
+
+    public double totalNumberOfSides() {
+        double result = 0;
+        for (Figure figure : figures) {
+            result += figure.numberOfSides(numberOfSidesVisitor);
+        }
+        return result;
+    }
 
 }

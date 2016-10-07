@@ -1,12 +1,11 @@
 package es.upm.miw.pd.visitor.figure;
 
-public abstract class Figure {
+public abstract class Figure implements Element {
 
-	public Figure(String description) {
-	}
+    protected String description;
 
-	public abstract double area();
-
-	public abstract double numberOfSides();
+    public Figure(String description) {
+        this.description = description;
+    }
 
 }
