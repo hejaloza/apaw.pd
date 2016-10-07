@@ -2,11 +2,11 @@ package es.upm.miw.pd.visitor.figure;
 
 import upm.jbb.IO;
 
-public final class Main {
+public final class MainVisitorFigure {
 
     private FiguresManager figuresManager;
 
-    public Main() {
+    public MainVisitorFigure() {
         figuresManager = new FiguresManager();
     }
 
@@ -44,6 +44,6 @@ public final class Main {
     }
 
     public static void main(String[] args) {
-        IO.getIO().addView(new Main());
+        IO.getIO().addView(new MainVisitorFigure());
     }
 }
