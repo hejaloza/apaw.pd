@@ -5,10 +5,10 @@ public class Restar extends Operacion {
 	public Expresion expresionResta1;
 	public Expresion expresionResta2;
 
-	public Restar(Expresion expression1, Expresion expression2) {
-		super(expression1, expression2);
-		this.expresionResta1 = expression1;
-		this.expresionResta2 = expression2;
+	public Restar(Expresion expresion1, Expresion expresion2) {
+		super(expresion1, expresion2);
+		this.expresionResta1 = expresion1;
+		this.expresionResta2 = expresion2;
 	}
 
 	@Override

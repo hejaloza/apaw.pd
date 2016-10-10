@@ -5,10 +5,10 @@ public class Sumar extends Operacion {
 	public Expresion expresionSuma1;
 	public Expresion expresionSuma2;
 
-	public Sumar(Expresion expression1, Expresion expression2) {
-		super(expression1, expression2);
-		this.expresionSuma1 = expression1;
-		this.expresionSuma2 = expression2;
+	public Sumar(Expresion expresion1, Expresion expresion2) {
+		super(expresion1, expresion2);
+		this.expresionSuma1 = expresion1;
+		this.expresionSuma2 = expresion2;
 	}
 
 	@Override

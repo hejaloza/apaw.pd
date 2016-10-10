@@ -6,6 +6,6 @@ public abstract class Expresion {
 
 	}
 
-	abstract public int operar();
+	public abstract int operar();
 
 }

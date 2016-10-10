@@ -5,10 +5,10 @@ public class Multiplicar extends Operacion {
 	public Expresion expresionMultiplica1;
 	public Expresion expresionMultiplica2;
 
-	public Multiplicar(Expresion expression1, Expresion expression2) {
-		super(expression1, expression2);
-		this.expresionMultiplica1 = expression1;
-		this.expresionMultiplica2 = expression2;
+	public Multiplicar(Expresion expresion1, Expresion expresion2) {
+		super(expresion1, expresion2);
+		this.expresionMultiplica1 = expresion1;
+		this.expresionMultiplica2 = expresion2;
 	}
 
 	@Override
