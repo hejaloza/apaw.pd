@@ -12,14 +12,12 @@ public class SaveCommand extends Command {
 	@Override
 	public void execute() {
 		MementoCalculadora mementoCalculadora = this.calculator.createMemento();
-		gestorMementos.addMemento(mementoCalculadora.getKey(),
-				mementoCalculadora);
+		gestorMementos.addMemento(mementoCalculadora.getKey(), mementoCalculadora);
 	}
-	
+
 	@Override
 	public String name() {
-	    return "Save";
+		return "Save";
 	}
-	
-	
+
 }

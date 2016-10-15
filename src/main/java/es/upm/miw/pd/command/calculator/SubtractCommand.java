@@ -2,7 +2,7 @@ package es.upm.miw.pd.command.calculator;
 
 import upm.jbb.IO;
 
-public class SubtractCommand extends Command{
+public class SubtractCommand extends Command {
 
 	public SubtractCommand(Calculator calculator) {
 		super(calculator);
@@ -11,12 +11,12 @@ public class SubtractCommand extends Command{
 	@Override
 	public void execute() {
 		int sumando = IO.getIO().readInt();
-        calculator.subtract(sumando);
+		calculator.subtract(sumando);
 	}
-	
+
 	@Override
 	public String name() {
-	    return "Subtract";
+		return "Subtract";
 	}
 
 }
